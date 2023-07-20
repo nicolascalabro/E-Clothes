@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main h2 {
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+footer{
+    background-color: rgb(65, 129, 172);
+    margin-top: 10px;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-evenly;
+}
+
+/*--------------------------------------------------Clases--------------------------------------------------*/
+/*-----Header-----*/
+.headerNavegador{
+    background-color: rgb(65, 129, 172);
+    padding: 10px;    
+    width: 100%;
+    background-size: cover;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerNavegador ul{
+    list-style: none;  
+    display: flex;
+    flex-direction: row;       
+}
+
+.headerNavegador ul li{      
+    margin: 2px;
+    padding: 10px;
+}
+
+.headerNavegador ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.headerNavegador ul li :hover{  
+    background-color:  rgb(16, 78, 119);   
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+/*-----Footer-----*/
+/*Navegacion*/
+.footerNavegador{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.footerNavegador ul{
+    list-style: none;
+}
+
+.footerNavegador ul li{
+    margin: 2px;
+    padding: 1px;
+}
+
+.footerNavegador ul li a{
+    color: white;
+    text-decoration: none;    
+}
+
+.footerNavegador h5{
+    color: white;
+    font-size: 20px;
+}
+
+/*Redes*/
+.footerRedes{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.footerRedes h5{
+    color: white;
+    font-size: 20px;
+}
+
+/*Medios de pago*/
+.footerMediosDePagos{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.footerMediosDePagos h5{
+    color: white;
+    font-size: 20px;
+}
+
+/*Contactos*/
+.footerContactos{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.footerContactos h5{
+    color: white;
+    font-size: 20px;
+}
+
+.footerContactos p{
+    color: white;
+    height: 25px
+}
+
+/*-----Imagenes-----*/
+.img-size-small {
+    width: 250px;
+    object-fit: cover;
+}
+
+.img-size-meddium {
+    width: 300px;
+    height: 300px;    
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 5px 10px 10px 10px;
+}
+
+.img-size-large {
+    height: 100%;
+    width: 100%;    
+    object-fit: cover;
+    margin-top: 122px;
+}
+
+/*-----Tarjetas-----*/
+/*Productos*/
+/*section*/
+.sectionTarjetaProductos{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.tarjetaProductos{
+    width: 400px;
+    border: 2px solid rgba(65, 129, 172);    
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.tarjetaProductos img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.tarjetaProductos h3{
+    font-size: 25px;
+}
+
+.tarjetaProductos a{
+    text-decoration: none;
+    color: whitesmoke;   
+}
+
+.tarjetaProductos button{
+    background-color: rgba(65, 129, 172);
+    padding: 10px;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.tarjetaProductos button :hover{   
+    color: rgb(11, 34, 49);
+    transition: 0.5s;
+}
+
+/*Items*/
+/*section*/
+.sectionTarjetaItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+.tarjetaItems{
+    width: 300px;
+    border: 2px solid rgba(65, 129, 172);    
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    z-index: -1;   
+}
+
+.tarjetaItems img{
+    width: 100%;    
+    object-fit: cover;
+}
+
+.tarjetaItems h3{
+    font-size: 20px;
+}
+
+.tarjetaItems a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.tarjetaItems button{
+    background-color: rgba(65, 129, 172);
+    padding: 5px;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.tarjetaItems p{
+    font-size: 20px;
+}
+
+.tarjetaItems i{
+    font-size: 35px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/*-----Logos-----*/
+.headerLogo{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.logoWhatsapp img{
+    position: fixed;
+    top: 90%;
+    right: 5%;
+}
+
+/*-----Main Section offset-----*/
+.mainSection{
+    margin-top: 150px;
+}
+
+/*-----Formulario-----*/
+.formulario{
+    border: 2px solid rgb(65, 129, 172);
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.formulario .nombre input, .formulario .mail input, .formulario .telefono input{
+    width: 140px;
+    height: 20px;
+    margin: 10px 0px;
+    padding: 10px;
+    border: 2px solid rgb(65, 129, 172);
+    border-radius: 2px;
+}
+
+.formulario .provincia select{
+    width: 140px;
+    height: 25px;
+    margin: 10px 0px;;
+    border: 2px solid rgb(65, 129, 172);
+    border-radius: 2px;
+}
+
+.formulario .mensaje textarea{
+    border: 2px solid rgb(65, 129, 172);
+    margin: 10px 0px;
+    border-radius: 2px;
+}
+
+.formulario .botones button{
+    width: 100px;
+    background-color: rgba(65, 129, 172);
+    padding: 5px;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.formulario input:hover, .formulario input:focus, .formulario select:hover, .formulario select:focus, .formulario textarea:hover, .formulario textarea:focus{
+    background-color: rgb(65, 129, 172);
+    color: white;   
+    transition: 0.5s;
+    border-radius: 5px;
+    /*cursor: pointer;*/
+}
+
+/*-----Info de contacto-----*/
+.infoContactos{
+    border: 2px solid rgb(65, 129, 172);
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.sectionContacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Clothes</title>
+    <link rel="shortcut icon" href="../media/icons/online-shop.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <nav class="headerNavegador">
+            <img class="headerLogo" src="../media/imgs/logo.jpg" alt="logo">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./products.html">Productos</a></li>
+                <ul>
+                    <li><a href="./buzos.html">Buzos</a></li>
+                    <li><a href="./camperas.html">Camperas</a></li>
+                </ul>
+                <li><a href="./contact.html">Contacto</a></li>
+                <li><a href="./help.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainSection">
+        <h2>Contacto</h2>
+        <section class="sectionContacto">   
+            <!--Informacion de contacto-->
+            <div class="infoContactos">
+                <h3>Contáctanos</h3>
+                <div>
+                    <img src="../media/icons/whatsapp.png" alt="WhathsApp">
+                    <img src="../media/icons/email.png" alt="E-mail">
+                    <img src="../media/icons/location.png" alt="Ubicacion">
+                    <p>+54 9 263-4756785</p>                    
+                    <p>eclothes@gmail.com</p>                    
+                    <p>San Martín 123, Mza, ARG</p>   
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.0530566138264!2d-68.85391067508519!3d-32.89676544939677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0908d5e865c5%3A0xb5ec70786453a73!2sUTN%20Facultad%20Regional%20Mendoza!5e0!3m2!1ses!2sar!4v1687724555104!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+                </div>           
+            </div>  
+            <!--Formulario-->
+            <form class="formulario">
+                
+                <div class="nombre">
+                    <label for="id-nombre">Nombre: </label>
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre" id="id-nombre" required>
+                </div>
+                
+                <div class="mail">
+                    <label for="id-mail">E-mail: </label>
+                    <input type="text" name="mail" placeholder="Ingrese su e-mail" id="id-mail" required>
+                </div>
+            
+                <div class="provincia">
+                    <label for="">Provincia (Opcional):</label>
+                    <select name="provincia"> 
+                        <option value="mendoza">Mendoza</option>
+                        <option value="buenosaires">Buenos Aires</option>
+                        <option value="cordoba">Cordoba</option>
+                    </select>
+                </div>
+                
+                <div class="telefono">
+                    <label for="id-telefono">Teléfono (Opcional): </label>
+                    <input type="number" name="telefono" id="id-telefono" placeholder="Ingrese su teléf.">
+                </div>
+                
+                <div class="mensaje">
+                    <label for="id-mensaje">Mensaje (Opcional): </label>
+                    <textarea name="mensaje" id="id-mensaje" cols="40" rows="10" placeholder="Ingrese su mensaje"></textarea>
+                </div>
+                <!-- 
+                <div class="sexo">
+                    <fieldset>
+                        <legend>Sexo:</legend>
+                        <label for="id-hombre">Hombre: </label>
+                        <input type="radio" name="sexo" id="id-hombre" value="h" checked>
+                        <label for="id-mujer">Mujer: </label>
+                        <input type="radio" name="sexo" id="id-mujer" value="m">
+                    </fieldset>
+                </div>
+                --> 
+                <div class="captcha">         
+                    <label for="id-captcha">No soy un robot</label>
+                    <input type="checkbox" name="captcha" id="id-captcha" value="acepto" required>
+                </div>
+
+                <div class="botones">            
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footerNavegador">
+            <h5>Navegación</h5>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./products.html">Productos</a></li>
+                    <li><a href= "./contact.html">Contacto</a></li>
+                    <li><a href="./help.html">Ayuda</a></li>
+                </ul>        
+            </nav>
+        </div>
+        <div class="footerRedes">       
+            <h5>Siguenos en nuestras redes</h5>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../media/icons/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../media/icons/facebook.png" alt=""></a>
+        </div>         
+        <div class="footerMediosDePagos">
+            <h5>Medios de pago</h5>
+            <img class="img-size-small" src="../media/imgs/tarjetas.jpg" alt="tarjetas">
+        </div>
+        <div class="footerContactos">
+            <h5>Contáctanos</h5>
+            <div>
+                <p>Whathsapp: +54 9 263-4756785</p>
+                <p>Correo: eclothes@gmail.com</p>
+                <p>Direccion: San Martín 123, Mza, ARG</p>           
+            </div>
+        </div>        
+    </footer>  
+
+</body>
+</html>
