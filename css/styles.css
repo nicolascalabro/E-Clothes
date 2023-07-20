@@ -340,10 +340,23 @@ footer{
     border: 2px solid rgb(65, 129, 172);
     border-radius: 2px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.sectionContacto{
+.sectionContactos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.infoContactosNumero, .infoContactosEmail, .infoContactosUbicacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+
