@@ -292,12 +292,25 @@ footer{
     border: 2px solid rgb(65, 129, 172);
     border-radius: 2px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario .nombre, .formulario .mail, .formulario .provincia, .formulario .telefono, .formulario .mensaje{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario .captcha{
+    display: flex;
+    gap: 10px;
 }
 
 .formulario .nombre input, .formulario .mail input, .formulario .telefono input{
-    width: 140px;
+    width: 400px;
     height: 20px;
-    margin: 10px 0px;
+    /*margin: 10px 0px;*/
     padding: 10px;
     border: 2px solid rgb(65, 129, 172);
     border-radius: 2px;
@@ -306,14 +319,14 @@ footer{
 .formulario .provincia select{
     width: 140px;
     height: 25px;
-    margin: 10px 0px;;
+    /*margin: 10px 0px;*/
     border: 2px solid rgb(65, 129, 172);
     border-radius: 2px;
 }
 
 .formulario .mensaje textarea{
     border: 2px solid rgb(65, 129, 172);
-    margin: 10px 0px;
+    /*margin: 10px 0px;*/
     border-radius: 2px;
 }
 
@@ -324,7 +337,7 @@ footer{
     color: whitesmoke;
     border-radius: 5px;
     font-size: 15px;
-    margin: 10px 0px;
+    /*margin: 10px 0px;*/
 }
 
 .formulario input:hover, .formulario input:focus, .formulario select:hover, .formulario select:focus, .formulario textarea:hover, .formulario textarea:focus{
