@@ -162,6 +162,12 @@ footer{
     margin-top: 122px;
 }
 
+.img-size-grilla{
+    height: 150px;
+    width: 100px;
+    object-fit: cover;
+}
+
 /*-----Tarjetas-----*/
 /*Productos*/
 /*section*/
@@ -381,4 +387,103 @@ footer{
     gap: 20px;
 }
 
+/*-----Producto X-----*/
+.productoX{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    margin-left: 150px;   
+    margin-right: 100px;
+}
+
+.productoX .imgPrincipal{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 2px solid rgb(65, 129, 172);
+    border-radius: 2px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.productoX .imgPrincipal img{
+    width: 100%;
+    height: 100%;
+}
+
+.productoX .imgGrilla{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 2px solid rgb(65, 129, 172);
+    border-radius: 2px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.productoX .informacion{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    border: 2px solid rgb(65, 129, 172);
+    border-radius: 2px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 10px;
+}
+
+.productoX .informacion .informacionCuotas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.productoX .informacion .informacionColor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.productoX .informacion .informacionBoton{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.productoX .informacion .informacionBoton button{
+    width: 150px;
+    background-color: rgba(65, 129, 172);
+    padding: 5px;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.productoX .compartir{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    border: 2px solid rgb(65, 129, 172);
+    border-radius: 2px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: start;
+}
+
+.productoX .compartir .compartirIconos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: start;
+
+}
 
