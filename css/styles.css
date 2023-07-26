@@ -74,6 +74,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 0px;  /*Saco el padding que puso Bootstrap*/
 }
 
 .footerNavegador ul li{
@@ -92,7 +93,6 @@ footer{
 .footerNavegador h5{
     color: white;
     font-size: 20px;
-    margin-left: 35px;
     margin-top: 16px;
 }
 
@@ -314,7 +314,7 @@ footer{
 
 /*-----Main Section offset-----*/
 .mainSection{
-    margin-top: 150px;
+    margin-top: 140px;
 }
 
 /*-----Formulario-----*/
@@ -508,7 +508,10 @@ footer{
         flex-direction: column;
     }
     .mainSection{
-        margin-top: 242px;
+        margin-top: 270px;
+    }
+    .mainSectionIndex{
+        margin-top: 145px;
     }
 }
 @media(max-width:992px){
