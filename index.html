@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Clothes</title>
-    <link rel="shortcut icon" href="./media/icons/online-shop.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./media/icons/online-shop.png" type="image/x-icon">    
+    <!--Hoja de style de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -17,10 +19,8 @@
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/products.html">Productos</a></li>
-                <ul>
-                    <li><a href="./pages/buzos.html">Buzos</a></li>
-                    <li><a href="./pages/camperas.html">Camperas</a></li>
-                </ul>   
+                <li><a href="./pages/buzos.html">Buzos</a></li>
+                <li><a href="./pages/camperas.html">Camperas</a></li> 
                 <li><a href="./pages/contact.html">Contacto</a></li>
                 <li><a href="./pages/help.html">Ayuda</a></li>
             </ul>        
@@ -28,15 +28,13 @@
     </header>
 
     <main>
-        <!--Ofertas (pendiente hacer slide para imagenes)-->
+        <!--Ofertas-->
         <img class= "img-size-large" src="./media/imgs/ofertas_1.webp" alt="ofertas_1">
-        
         <!--Logo de WhathsApp
         <div class="logoWhatsapp">
             <img src="./media/icons/whatsapp.png" alt="">
         </div>
         -->      
-
         <!--Se muestran los productos que tendria la pagina-->
         <section class="sectionTarjetaProductos">        
             <div class="tarjetaProductos">
@@ -50,7 +48,6 @@
                 <button><a href="./pages/camperas.html">Ver más</a></button>    
             </div>   
         </section>    
-
         <!--Se muestran los productos mas comprados-->
         <h2>Productos destacados</h2>
         <section class="sectionTarjetaItems">            
@@ -183,6 +180,8 @@
             </div>
         </div>        
     </footer>
-
+    
+    <!--Script Javascript de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
