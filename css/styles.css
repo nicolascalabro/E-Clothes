@@ -502,6 +502,13 @@ footer{
 
 }
 
+/*-----Ayuda-----*/
+
+.ayuda h3 {
+    padding: 10px;
+    color: rgb(65, 129, 172);
+}
+
 /*--------------------------------------------------Media Queries--------------------------------------------------*/
 @media(max-width:768px){    
     .headerNavegador ul{
