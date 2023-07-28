@@ -20,21 +20,45 @@
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/products.html">Productos</a></li>
                 <li><a href="./pages/buzos.html">Buzos</a></li>
-                <li><a href="./pages/camperas.html">Camperas</a></li> 
+                <li><a href="./pages/camperas.html">Camperas</a></li>             
                 <li><a href="./pages/contact.html">Contacto</a></li>
-                <li><a href="./pages/help.html">Ayuda</a></li>
+                <li><a href="./pages/help.html">Ayuda</a></li>                
             </ul>        
         </nav>
     </header>
 
-    <main class="mainSectionIndex">
+    <main>
         <!--Ofertas-->
-        <img class= "img-size-large" src="./media/imgs/ofertas_1.webp" alt="ofertas_1">
+        <div id="carouselExampleIndicators" class="carousel slide carruselSize">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./media/imgs/ofertas_5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./media/imgs/ofertas_6.jpg" class="d-block w-100" alt="...">
+              </div>       
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--<img class= "img-size-large" src="./media/imgs/ofertas_1.webp" alt="ofertas_1">-->
         <!--Logo de WhathsApp
         <div class="logoWhatsapp">
             <img src="./media/icons/whatsapp.png" alt="">
         </div>
         -->
+
         <!--Se muestran los productos que tendria la pagina-->
         <section class="sectionTarjetaProductos">        
             <div class="tarjetaProductos">
@@ -48,6 +72,7 @@
                 <button><a href="./pages/camperas.html">Ver más</a></button>    
             </div>   
         </section>    
+
         <!--Se muestran los productos mas comprados-->
         <h2>Productos destacados</h2>
         <section class="sectionTarjetaItems">            
