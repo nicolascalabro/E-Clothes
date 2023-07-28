@@ -411,7 +411,7 @@ footer{
 .productoX{
     display: grid;
     grid-template-columns: repeat(3,1fr); 
-    margin-left: 150px;   
+    margin-left: 100px;   
     margin-right: 100px;
 }
 
@@ -445,8 +445,8 @@ footer{
 .productoX .informacion{
     grid-column: 2/4;
     grid-row: 1/2;
-    border: 2px solid rgb(65, 129, 172);
-    border-radius: 2px;
+    /*border: 2px solid rgb(65, 129, 172);
+    border-radius: 2px;*/
     margin: 10px;
     padding: 10px;
     display: flex;
@@ -485,7 +485,7 @@ footer{
 }
 
 .productoX .informacion .informacionBoton button{
-    width: 168px;
+    /*width: 168px;*/
     background-color: rgba(65, 129, 172);
     padding: 5px;
     color: whitesmoke;
@@ -496,8 +496,8 @@ footer{
 .productoX .compartir{
     grid-column: 2/4;
     grid-row: 2/3;
-    border: 2px solid rgb(65, 129, 172);
-    border-radius: 2px;
+    /*border: 2px solid rgb(65, 129, 172);
+    border-radius: 2px;*/
     margin: 10px;
     padding: 10px;
     display: flex;
@@ -513,7 +513,6 @@ footer{
     flex-wrap: wrap;
     gap: 10px;
     align-items: start;
-
 }
 
 /*-----Ayuda-----*/
