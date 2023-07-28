@@ -5,7 +5,7 @@
 }
 
 main h2 {
-    color: blue;
+    color: DodgerBlue;
     font-size: 30px;
     text-align: center;
     margin: 20px;
@@ -186,7 +186,8 @@ footer{
 .sectionTarjetaProductos{
     display: flex;
     justify-content: center;
-    gap: 100px;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .tarjetaProductos{
@@ -327,6 +328,10 @@ footer{
     gap: 10px;
 }
 
+.formulario label{
+    font-size: 20px;
+}
+
 .formulario .nombre, .formulario .mail, .formulario .provincia, .formulario .telefono, .formulario .mensaje{
     display: flex;
     flex-direction: column;
@@ -458,10 +463,19 @@ footer{
     gap: 10px;
 }
 
+.productoX .informacion .informacionCuotas p{
+    margin: 0px;
+}
+
 .productoX .informacion .informacionColor{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 10px;
+}
+
+.productoX .informacion .informacionColor h4{
+   margin: 0px;     /*Saco margin que Bootstrap puso*/
 }
 
 .productoX .informacion .informacionBoton{
@@ -471,12 +485,12 @@ footer{
 }
 
 .productoX .informacion .informacionBoton button{
-    width: 150px;
+    width: 168px;
     background-color: rgba(65, 129, 172);
     padding: 5px;
     color: whitesmoke;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .productoX .compartir{
@@ -503,7 +517,6 @@ footer{
 }
 
 /*-----Ayuda-----*/
-
 .ayuda h3 {
     padding: 10px;
     color: rgb(65, 129, 172);
@@ -520,9 +533,12 @@ footer{
     .mainSectionIndex{
         margin-top: 145px;
     }
+    .sectionContactos{
+        gap: 30px;
+    }
 }
 @media(max-width:992px){
     footer{
         flex-direction: column;
-    }
+    }    
 }

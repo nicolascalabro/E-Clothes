@@ -45,37 +45,32 @@
                     <img src="../media/icons/location.png" alt="Ubicacion">
                     <p>San Martín 123, Mza, ARG</p>
                 </div>                                      
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.0530566138264!2d-68.85391067508519!3d-32.89676544939677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0908d5e865c5%3A0xb5ec70786453a73!2sUTN%20Facultad%20Regional%20Mendoza!5e0!3m2!1ses!2sar!4v1687724555104!5m2!1ses!2sar" width="300" height="326" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                  
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.0530566138264!2d-68.85391067508519!3d-32.89676544939677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0908d5e865c5%3A0xb5ec70786453a73!2sUTN%20Facultad%20Regional%20Mendoza!5e0!3m2!1ses!2sar!4v1687724555104!5m2!1ses!2sar" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                  
             </div>  
             <!--Formulario-->
-            <form class="formulario">
-                
+            <form class="formulario">               
                 <div class="nombre">
-                    <label for="id-nombre">Nombre: </label>
+                    <label for="id-nombre"><strong>Nombre:</strong></label>
                     <input type="text" name="nombre" placeholder="Ingrese su nombre" id="id-nombre" required>
-                </div>
-                
+                </div>               
                 <div class="mail">
-                    <label for="id-mail">E-mail: </label>
+                    <label for="id-mail"><strong>E-mail:</strong></label>
                     <input type="text" name="mail" placeholder="Ingrese su e-mail" id="id-mail" required>
-                </div>
-            
+                </div>          
                 <div class="provincia">
-                    <label for="">Provincia (Opcional):</label>
+                    <label for=""><strong>Provincia (Opcional):</strong></label>
                     <select name="provincia"> 
                         <option value="mendoza">Mendoza</option>
                         <option value="buenosaires">Buenos Aires</option>
                         <option value="cordoba">Cordoba</option>
                     </select>
-                </div>
-                
+                </div>               
                 <div class="telefono">
-                    <label for="id-telefono">Teléfono (Opcional): </label>
+                    <label for="id-telefono"><strong>Teléfono (Opcional):</strong></label>
                     <input type="number" name="telefono" id="id-telefono" placeholder="Ingrese su teléfono">
-                </div>
-                
+                </div>               
                 <div class="mensaje">
-                    <label for="id-mensaje">Mensaje (Opcional): </label>
+                    <label for="id-mensaje"><strong>Mensaje (Opcional):</strong></label>
                     <textarea name="mensaje" id="id-mensaje" cols="40" rows="10" placeholder="Ingrese su mensaje"></textarea>
                 </div>
                 <!-- 
@@ -93,14 +88,12 @@
                     <label for="id-captcha">No soy un robot</label>
                     <input type="checkbox" name="captcha" id="id-captcha" value="acepto" required>
                 </div>
-
                 <div class="botones">            
                     <button type="submit">Enviar</button>
                     <button type="reset">Reset</button>
                 </div>
             </form>
         </section>
-        
     </main>
 
     <footer>
