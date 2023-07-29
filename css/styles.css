@@ -1,562 +1,505 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 main h2 {
-    color: DodgerBlue;
-    font-size: 30px;
-    text-align: center;
-    margin: 20px;
+  color: DodgerBlue;
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
 }
 
-footer{
-    background-color: rgb(65, 129, 172);
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-/*--------------------------------------------------Clases--------------------------------------------------*/
 /*-----Header-----*/
-.headerNavegador{
-    background-color: rgb(65, 129, 172);
-    padding: 10px;    
-    width: 100%;
-    background-size: cover;
-    /*position: fixed;
-    z-index: +1;*/
-    top: 0%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.headerNavegador {
+  background-color: rgb(65, 129, 172);
+  padding: 10px;
+  width: 100%;
+  background-size: cover;
+  top: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.headerNavegador ul{
-    list-style: none;  
-    display: flex;
-    flex-direction: row;       
+.headerNavegador ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
-
-.headerNavegador ul li{      
-    margin: 2px;
-    padding: 5px;
+.headerNavegador ul li {
+  margin: 2px;
+  padding: 5px;
 }
-
-.headerNavegador ul li a{
-    color: white;
-    text-decoration: none;
+.headerNavegador ul li :hover {
+  background-color: rgb(16, 78, 119);
+  transition: 0.5s;
+  border-radius: 5px;
+  padding: 5px 5px;
 }
-
-.headerNavegador ul li :hover{  
-    background-color:  rgb(16, 78, 119);   
-    transition: 0.5s;
-    border-radius: 5px;
-    padding: 5px 5px;
+.headerNavegador ul li a {
+  color: white;
+  text-decoration: none;
 }
-
-/*-----Footer-----*/
-/*Navegacion*/
-.footerNavegador{
-    display: flex;
+@media (max-width: 768px) {
+  .headerNavegador ul {
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    /*margin-top: 20px;
-    margin-bottom: 20px;*/
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+footer {
+  background-color: rgb(65, 129, 172);
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 992px) {
+  footer {
+    flex-direction: column;
     gap: 10px;
+  }
 }
 
-.footerNavegador ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0px;  /*Saco el padding que puso Bootstrap*/
+/*Navegacion*/
+.footerNavegador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
 }
-
-.footerNavegador ul li{
-    margin: 2px;
-    padding: 1px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footerNavegador h5 {
+  color: white;
+  font-size: 20px;
+  margin-top: 16px;
 }
-
-.footerNavegador ul li a{
-    color: white;
-    text-decoration: none;    
+.footerNavegador ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0px; /*Saco el padding que puso Bootstrap*/
 }
-
-.footerNavegador h5{
-    color: white;
-    font-size: 20px;
-    margin-top: 16px;
+.footerNavegador ul li {
+  margin: 2px;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerNavegador ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 /*Redes*/
-.footerRedes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    /*margin-top: 20px;
-    margin-bottom: 20px;*/
-    gap: 10px;
+.footerRedes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
 }
-
-.footerRedes h5{
-    color: white;
-    font-size: 20px;
-    margin-top: 5px;
+.footerRedes h5 {
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
 }
 
 /*Medios de pago*/
-.footerMediosDePagos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    /*margin-top: 20px;
-    margin-bottom: 20px;*/
-    gap: 10px;
+.footerMediosDePagos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
 }
-
-.footerMediosDePagos h5{
-    color: white;
-    font-size: 20px;
-    margin-bottom: 10px;
+.footerMediosDePagos h5 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 /*Contactos*/
-.footerContactos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    /*margin-top: 20px;
-    margin-bottom: 20px;*/
-    gap: 10px;
+.footerContactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
 }
-
-.footerContactos h5{
-    color: white;
-    font-size: 20px;
-    margin-bottom: 10px;
+.footerContactos h5 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-
-.footerContactos p{
-    color: white;
-    height: 25px;
-    margin: 0px;        /*Saco el margin que puso Bootstrap*/
+.footerContactos p {
+  color: white;
+  height: 25px;
+  margin: 0px; /*Saco el margin que puso Bootstrap*/
 }
 
 /*-----Imagenes-----*/
 .img-size-small {
-    width: 250px;
-    object-fit: cover;
+  width: 250px;
+  object-fit: cover;
 }
 
 .img-size-meddium {
-    width: 300px;
-    height: 300px;    
-    object-fit: cover;
-    border-radius: 20px;
-    padding: 5px 10px 10px 10px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 5px 10px 10px 10px;
 }
 
 .img-size-large {
-    height: 100%;
-    width: 100%;    
-    object-fit: cover;
-    margin-top: 5px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 5px;
 }
 
-.img-size-grilla{
-    height: 150px;
-    width: 100px;
-    object-fit: cover;
+.img-size-grilla {
+  height: 150px;
+  width: 100px;
+  object-fit: cover;
 }
 
-/*-----Tarjetas-----*/
 /*Productos*/
 /*section*/
-.sectionTarjetaProductos{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+.sectionTarjetaProductos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.tarjetaProductos{
-    width: 400px;
-    border: 2px solid rgba(65, 129, 172);    
-    border-radius: 5px;
-    background-color: whitesmoke;
-    margin: 20px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.tarjetaProductos {
+  width: 400px;
+  border: 2px solid rgb(65, 129, 172);
+  border-radius: 5px;
+  background-color: whitesmoke;
+  margin: 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-
-.tarjetaProductos img{
-    width: 100%;
-    object-fit: cover;
+.tarjetaProductos img {
+  width: 100%;
+  object-fit: cover;
 }
-
-.tarjetaProductos h3{
-    font-size: 25px;
+.tarjetaProductos h3 {
+  font-size: 25px;
 }
-
-.tarjetaProductos a{
-    text-decoration: none;
-    color: whitesmoke;   
+.tarjetaProductos a {
+  text-decoration: none;
+  color: whitesmoke;
 }
-
-.tarjetaProductos button{
-    background-color: rgba(65, 129, 172);
-    padding: 10px;
-    color: whitesmoke;
-    border-radius: 5px;
-    font-size: 20px;
+.tarjetaProductos button {
+  background-color: rgb(65, 129, 172);
+  padding: 10px;
+  color: whitesmoke;
+  border-radius: 5px;
+  font-size: 20px;
 }
-
-.tarjetaProductos button :hover{   
-    color: rgb(11, 34, 49);
-    transition: 0.5s;
+.tarjetaProductos button :hover {
+  color: rgb(11, 34, 49);
+  transition: 0.5s;
 }
 
 /*Items*/
 /*section*/
-.sectionTarjetaItems{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  
+.sectionTarjetaItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.tarjetaItems{
-    width: 300px;
-    border: 2px solid rgba(65, 129, 172);    
-    border-radius: 5px;
-    background-color: whitesmoke;
-    margin: 20px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    position: relative;
+.tarjetaItems {
+  width: 300px;
+  border: 2px solid rgb(65, 129, 172);
+  border-radius: 5px;
+  background-color: whitesmoke;
+  margin: 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+.tarjetaItems a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
-.tarjetaItems__img{
-    width: 100%;    
-    object-fit: cover;
+.tarjetaItems__img {
+  width: 100%;
+  object-fit: cover;
 }
 
-.tarjetaItems__descripcion{
-    font-size: 20px;
-    margin: 0px;    /*Saco el margin que me puso la hoja de style de Bootstrap*/
+.tarjetaItems__descripcion {
+  font-size: 20px;
+  margin: 0px; /*Saco el margin que me puso la hoja de style de Bootstrap*/
 }
 
-.tarjetaItems a{
-    text-decoration: none;
-    color: whitesmoke;
+.tarjetaItems__boton {
+  background-color: rgb(65, 129, 172);
+  padding: 5px;
+  color: whitesmoke;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.tarjetaItems__boton :hover {
+  color: rgb(11, 34, 49);
+  transition: 0.5s;
 }
 
-.tarjetaItems__boton{
-    background-color: rgba(65, 129, 172);
-    padding: 5px;
-    color: whitesmoke;
-    border-radius: 5px;
-    font-size: 20px;
+.tarjetaItems__precio {
+  font-size: 20px;
+  margin: 0px; /*Saco el margin que me puso la hoja de style de Bootstrap*/
 }
 
-.tarjetaItems_boton :hover{   
-    color: rgb(11, 34, 49);
-    transition: 0.5s;
+.tarjetaItems__cuotas {
+  font-size: 20px;
+  margin: 0px; /*Saco el margin que me puso la hoja de style de Bootstrap*/
 }
 
-.tarjetaItems__precio{
-    font-size: 20px;
-    margin: 0px;    /*Saco el margin que me puso la hoja de style de Bootstrap*/
-}
-
-.tarjetaItems__cuotas{
-    font-size: 20px;
-    margin: 0px;    /*Saco el margin que me puso la hoja de style de Bootstrap*/
-}
-
-.tarjetaItems__corazon{
-    font-size: 35px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+.tarjetaItems__corazon {
+  font-size: 35px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 /*-----Logos-----*/
-.headerLogo{
-    width: 75px;
-    height: 75px;
-    object-fit: cover;
-    border-radius: 5px;
+.headerLogo {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 5px;
 }
+
 /*.logoWhatsapp img{
     position: fixed;
     top: 90%;
     right: 5%;
 }*/
-
-/*-----Main Section offset-----*/
-/*.mainSection{
-    margin-top: 140px;
-}*/
-
 /*-----Formulario-----*/
-.formulario{
-    border: 2px solid rgb(65, 129, 172);
-    border-radius: 2px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.formulario {
+  border: 2px solid rgb(65, 129, 172);
+  border-radius: 2px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-
-.formulario label{
-    font-size: 20px;
+.formulario label {
+  font-size: 20px;
 }
-
-.formulario .nombre, .formulario .mail, .formulario .provincia, .formulario .telefono, .formulario .mensaje{
-    display: flex;
-    flex-direction: column;
+.formulario .nombre, .formulario .mail, .formulario .telefono {
+  display: flex;
+  flex-direction: column;
 }
-
-.formulario .captcha{
-    display: flex;
-    gap: 10px;
+.formulario .nombre input, .formulario .mail input, .formulario .telefono input {
+  width: 300px;
+  height: 20px;
+  padding: 10px;
+  border: 2px solid rgb(65, 129, 172);
+  border-radius: 2px;
 }
-
-.formulario .nombre input, .formulario .mail input, .formulario .telefono input{
-    width: 300px;
-    height: 20px;
-    /*margin: 10px 0px;*/
-    padding: 10px;
-    border: 2px solid rgb(65, 129, 172);
-    border-radius: 2px;
+.formulario .nombre input:hover, .formulario .nombre input:focus, .formulario .mail input:hover, .formulario .mail input:focus, .formulario .telefono input:hover, .formulario .telefono input:focus {
+  background-color: rgb(65, 129, 172);
+  color: white;
+  transition: 0.5s;
+  border-radius: 5px;
 }
-
-.formulario .provincia select{
-    width: 140px;
-    height: 25px;
-    /*margin: 10px 0px;*/
-    border: 2px solid rgb(65, 129, 172);
-    border-radius: 2px;
+.formulario .provincia {
+  display: flex;
+  flex-direction: column;
 }
-
-.formulario .mensaje textarea{
-    border: 2px solid rgb(65, 129, 172);
-    /*margin: 10px 0px;*/
-    border-radius: 2px;
+.formulario .provincia select {
+  width: 140px;
+  height: 25px;
+  border: 2px solid rgb(65, 129, 172);
+  border-radius: 2px;
 }
-
-.formulario .botones button{
-    width: 100px;
-    background-color: rgba(65, 129, 172);
-    padding: 5px;
-    color: whitesmoke;
-    border-radius: 5px;
-    font-size: 15px;
-    /*margin: 10px 0px;*/
+.formulario .provincia select:hover, .formulario .provincia select:focus {
+  background-color: rgb(65, 129, 172);
+  color: white;
+  transition: 0.5s;
+  border-radius: 5px;
 }
-
-.formulario input:hover, .formulario input:focus, .formulario select:hover, .formulario select:focus, .formulario textarea:hover, .formulario textarea:focus{
-    background-color: rgb(65, 129, 172);
-    color: white;   
-    transition: 0.5s;
-    border-radius: 5px;
-    /*cursor: pointer;*/
+.formulario .mensaje {
+  display: flex;
+  flex-direction: column;
+}
+.formulario .mensaje textarea {
+  border: 2px solid rgb(65, 129, 172);
+  border-radius: 2px;
+}
+.formulario .mensaje textarea:hover, .formulario .mensaje textarea:focus {
+  background-color: rgb(65, 129, 172);
+  color: white;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.formulario .captcha {
+  display: flex;
+  gap: 10px;
+}
+.formulario .botones button {
+  width: 100px;
+  background-color: rgb(65, 129, 172);
+  padding: 5px;
+  color: whitesmoke;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
 /*-----Info de contacto-----*/
-.infoContactos{
-    border: 2px solid rgb(65, 129, 172);
-    border-radius: 2px;
-    padding: 10px;
-    display: flex;
+.sectionContactos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+@media (max-width: 768px) {
+  .sectionContactos {
     flex-direction: column;
-    gap: 20px;
-}
-
-.sectionContactos{     
-    display: flex;
-    flex-wrap: wrap;   
-    justify-content: center;
-    gap: 50px;
-}
-
-.infoContactosNumero, .infoContactosEmail, .infoContactosUbicacion{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
     align-items: center;
     gap: 20px;
+  }
 }
 
-.infoContactosNumero p, .infoContactosEmail p, .infoContactosUbicacion p{
-    margin: 0px;
+.infoContactos {
+  border: 2px solid rgb(65, 129, 172);
+  border-radius: 2px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoContactosNumero, .infoContactosEmail, .infoContactosUbicacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+.infoContactosNumero p, .infoContactosEmail p, .infoContactosUbicacion p {
+  margin: 0px;
 }
 
 /*-----Producto X-----*/
-.productoX{
-    display: grid;
-    align-content: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    grid-template-areas:    "imgPpal    imgPpal    info   info   info   info"
-                            "imgPpal    imgPpal    info   info   info   info"
-                            "imgGrilla  imgGrilla  comp   comp   comp   comp";                       
+.productoX {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "imgPpal    imgPpal    info   info   info   info" "imgPpal    imgPpal    info   info   info   info" "imgGrilla  imgGrilla  comp   comp   comp   comp";
 }
-
-.productoX .imgPrincipal{
-    grid-area: imgPpal;
-    border: 2px solid rgb(65, 129, 172);
-    border-radius: 2px;
-    margin: 10px;
-    padding: 10px;
+.productoX .imgPrincipal {
+  grid-area: imgPpal;
+  border: 2px solid rgb(65, 129, 172);
+  border-radius: 2px;
+  margin: 10px;
+  padding: 10px;
 }
-
-.productoX .imgPrincipal img{
-    object-fit: fill;    
+.productoX .imgPrincipal img {
+  object-fit: fill;
 }
-
-.productoX .imgGrilla{
-    grid-area: imgGrilla;
-    border: 2px solid rgb(65, 129, 172);
-    border-radius: 2px;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+.productoX .imgGrilla {
+  grid-area: imgGrilla;
+  border: 2px solid rgb(65, 129, 172);
+  border-radius: 2px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-
-.productoX .informacion{
-    grid-area: info;
-    /*border: 2px solid rgb(65, 129, 172);
-    border-radius: 2px;*/
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: start;
-    gap: 10px;
+.productoX .informacion {
+  grid-area: info;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 10px;
 }
-
-.productoX .informacion .informacionCuotas{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
+.productoX .informacion .informacionCuotas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
 }
-
-.productoX .informacion .informacionCuotas p{
-    margin: 0px;
+.productoX .informacion .informacionCuotas p {
+  margin: 0px;
 }
-
-.productoX .informacion .informacionColor{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
+.productoX .informacion .informacionColor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
 }
-
-.productoX .informacion .informacionColor h4{
-   margin: 0px;     /*Saco margin que Bootstrap puso*/
+.productoX .informacion .informacionColor h4 {
+  margin: 0px; /*Saco margin que Bootstrap puso*/
 }
-
-.productoX .informacion .informacionBoton{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.productoX .informacion .informacionBoton {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-
-.productoX .informacion .informacionBoton button{
-    /*width: 168px;*/
-    background-color: rgba(65, 129, 172);
-    padding: 5px;
-    color: whitesmoke;
-    border-radius: 5px;
-    font-size: 20px;
+.productoX .informacion .informacionBoton button {
+  background-color: rgb(65, 129, 172);
+  padding: 5px;
+  color: whitesmoke;
+  border-radius: 5px;
+  font-size: 20px;
 }
-
-.productoX .compartir{
-    grid-area: comp;
-    /*border: 2px solid rgb(65, 129, 172);
-    border-radius: 2px;*/
-    margin: 10px;
-    padding: 10px;
+.productoX .compartir {
+  grid-area: comp;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: start;
+}
+.productoX .compartir .compartirIconos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: start;
+}
+@media (max-width: 576px) {
+  .productoX {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 20px;
-    align-items: start;
-}
-
-.productoX .compartir .compartirIconos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: start;
+  }
 }
 
 /*-----Ayuda-----*/
-.ayuda{
-    padding: 20px;
+.ayuda {
+  padding: 20px;
 }
-
 .ayuda h3 {
-    color: rgb(65, 129, 172);
+  color: rgb(65, 129, 172);
 }
 
-/*--------------------------------------------------Media Queries--------------------------------------------------*/
-@media(max-width:992px){
-    footer{
-        flex-direction: column;
-        gap: 10px;
-    } 
-}
-
-@media(max-width:768px){    
-    .headerNavegador ul{
-        flex-direction: column;
-        margin: 0px;
-        padding: 0px;
-    }
-    /*.mainSection{
-        margin-top: 270px;
-    }
-    .mainSectionIndex{
-        margin-top: 145px;
-    }*/
-    .sectionContactos{
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-}
-
-@media(max-width:576px){
-    .productoX{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;                      
-    }
-}
+/*# sourceMappingURL=styles.css.map */

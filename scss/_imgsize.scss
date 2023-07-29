@@ -1,0 +1,26 @@
+/*-----Imagenes-----*/
+.img-size-small {
+    width: 250px;
+    object-fit: cover;
+}
+
+.img-size-meddium {
+    width: 300px;
+    height: 300px;    
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 5px 10px 10px 10px;
+}
+
+.img-size-large {
+    height: 100%;
+    width: 100%;    
+    object-fit: cover;
+    margin-top: 5px;
+}
+
+.img-size-grilla{
+    height: 150px;
+    width: 100px;
+    object-fit: cover;
+}

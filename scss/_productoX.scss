@@ -1,0 +1,94 @@
+/*-----Producto X-----*/
+.productoX{
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas:    "imgPpal    imgPpal    info   info   info   info"
+                            "imgPpal    imgPpal    info   info   info   info"
+                            "imgGrilla  imgGrilla  comp   comp   comp   comp";   
+    .imgPrincipal{
+        grid-area: imgPpal;
+        border: 2px solid rgb(65, 129, 172);
+        border-radius: 2px;
+        margin: 10px;
+        padding: 10px;
+        img{
+            object-fit: fill;    
+        }
+    }
+    .imgGrilla{
+        grid-area: imgGrilla;
+        border: 2px solid rgb(65, 129, 172);
+        border-radius: 2px;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }   
+    .informacion{
+        grid-area: info;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: start;
+        gap: 10px;
+        .informacionCuotas{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+            p{
+                margin: 0px;
+            }
+        }
+        .informacionColor{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+            h4{
+                margin: 0px;     /*Saco margin que Bootstrap puso*/
+             }
+        }
+        .informacionBoton{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            button{
+                background-color: rgba(65, 129, 172);
+                padding: 5px;
+                color: whitesmoke;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+        }
+
+    } 
+    .compartir{
+        grid-area: comp;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: start;
+        .compartirIconos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: start;
+        }
+    }
+    @media(max-width:576px){
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

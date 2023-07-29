@@ -1,0 +1,90 @@
+footer{
+    background-color: rgb(65, 129, 172);
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @media(max-width:992px){
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/*Navegacion*/
+.footerNavegador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    h5{
+        color: white;
+        font-size: 20px;
+        margin-top: 16px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;  /*Saco el padding que puso Bootstrap*/
+        li{
+            margin: 2px;
+            padding: 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                color: white;
+                text-decoration: none;    
+            }
+        }
+    }
+}
+
+/*Redes*/
+.footerRedes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    h5{
+        color: white;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+}
+
+/*Medios de pago*/
+.footerMediosDePagos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    h5{
+        color: white;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+/*Contactos*/
+.footerContactos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    h5{
+        color: white;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    p{
+        color: white;
+        height: 25px;
+        margin: 0px;        /*Saco el margin que puso Bootstrap*/
+    }
+}

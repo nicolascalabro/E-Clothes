@@ -1,0 +1,32 @@
+/*-----Info de contacto-----*/
+.sectionContactos{     
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;
+    gap: 50px;
+    @media(max-width:768px){
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.infoContactos{
+    border: 2px solid rgb(65, 129, 172);
+    border-radius: 2px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infoContactosNumero, .infoContactosEmail, .infoContactosUbicacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    p{
+        margin: 0px;
+    }
+}

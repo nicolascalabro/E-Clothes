@@ -1,0 +1,44 @@
+/*Productos*/
+/*section*/
+.sectionTarjetaProductos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tarjetaProductos{
+    width: 400px;
+    border: 2px solid rgba(65, 129, 172);    
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    h3{
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+        color: whitesmoke;   
+    }
+    button{
+        background-color: rgba(65, 129, 172);
+        padding: 10px;
+        color: whitesmoke;
+        border-radius: 5px;
+        font-size: 20px;  
+        & :hover{
+            color: rgb(11, 34, 49);
+            transition: 0.5s;
+        }      
+    }
+}

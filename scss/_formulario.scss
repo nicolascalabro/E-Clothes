@@ -1,0 +1,73 @@
+/*-----Formulario-----*/
+.formulario{
+    border: 2px solid rgb(65, 129, 172);
+    border-radius: 2px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    label{
+        font-size: 20px;
+    }
+    .nombre, .mail, .telefono{
+        display: flex;
+        flex-direction: column;
+        input{
+            width: 300px;
+            height: 20px;
+            padding: 10px;
+            border: 2px solid rgb(65, 129, 172);
+            border-radius: 2px;
+            &:hover,&:focus{
+                background-color: rgb(65, 129, 172);
+                color: white;   
+                transition: 0.5s;
+                border-radius: 5px;
+            } 
+        }
+    }
+    .provincia{
+        display: flex;
+        flex-direction: column;
+        select{
+            width: 140px;
+            height: 25px;
+            border: 2px solid rgb(65, 129, 172);
+            border-radius: 2px;
+            &:hover,&:focus{
+                background-color: rgb(65, 129, 172);
+                color: white;   
+                transition: 0.5s;
+                border-radius: 5px;
+            } 
+        }
+    }
+    .mensaje{
+        display: flex;
+        flex-direction: column;
+        textarea{
+            border: 2px solid rgb(65, 129, 172);
+            border-radius: 2px;
+            &:hover,&:focus{
+                background-color: rgb(65, 129, 172);
+                color: white;   
+                transition: 0.5s;
+                border-radius: 5px;
+            } 
+        }
+    }
+    .captcha{
+        display: flex;
+        gap: 10px;
+    }
+    .botones{
+        button{
+            width: 100px;
+            background-color: rgba(65, 129, 172);
+            padding: 5px;
+            color: whitesmoke;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+    }    
+}
