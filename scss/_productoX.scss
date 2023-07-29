@@ -9,7 +9,7 @@
                             "imgGrilla  imgGrilla  comp   comp   comp   comp";   
     .imgPrincipal{
         grid-area: imgPpal;
-        border: 2px solid rgb(65, 129, 172);
+        border: 2px solid $tag_color_template;
         border-radius: 2px;
         margin: 10px;
         padding: 10px;
@@ -19,7 +19,7 @@
     }
     .imgGrilla{
         grid-area: imgGrilla;
-        border: 2px solid rgb(65, 129, 172);
+        border: 2px solid $tag_color_template;
         border-radius: 2px;
         margin: 10px;
         padding: 10px;
@@ -60,7 +60,7 @@
             flex-wrap: wrap;
             gap: 10px;
             button{
-                background-color: rgba(65, 129, 172);
+                background-color: $tag_color_template;
                 padding: 5px;
                 color: whitesmoke;
                 border-radius: 5px;

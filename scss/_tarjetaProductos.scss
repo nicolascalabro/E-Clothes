@@ -9,7 +9,7 @@
 
 .tarjetaProductos{
     width: 400px;
-    border: 2px solid rgba(65, 129, 172);    
+    border: 2px solid $tag_color_template;  
     border-radius: 5px;
     background-color: whitesmoke;
     margin: 20px;
@@ -31,13 +31,13 @@
         color: whitesmoke;   
     }
     button{
-        background-color: rgba(65, 129, 172);
+        background-color: $tag_color_template;
         padding: 10px;
         color: whitesmoke;
         border-radius: 5px;
         font-size: 20px;  
         & :hover{
-            color: rgb(11, 34, 49);
+            color: $tag_color_hover;
             transition: 0.5s;
         }      
     }
