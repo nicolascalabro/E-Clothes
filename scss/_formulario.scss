@@ -62,12 +62,7 @@
     }
     .botones{
         button{
-            width: 100px;
-            background-color: $tag_color_template;
-            padding: 5px;
-            color: whitesmoke;
-            border-radius: 5px;
-            font-size: 15px;
+            @include boton(5px, 20px) 
         }
     }    
 }

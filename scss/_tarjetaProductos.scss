@@ -31,14 +31,6 @@
         color: whitesmoke;   
     }
     button{
-        background-color: $tag_color_template;
-        padding: 10px;
-        color: whitesmoke;
-        border-radius: 5px;
-        font-size: 20px;  
-        & :hover{
-            color: $tag_color_hover;
-            transition: 0.5s;
-        }      
+        @include boton(10px, 20px) 
     }
 }

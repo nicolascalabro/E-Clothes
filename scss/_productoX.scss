@@ -60,11 +60,7 @@
             flex-wrap: wrap;
             gap: 10px;
             button{
-                background-color: $tag_color_template;
-                padding: 5px;
-                color: whitesmoke;
-                border-radius: 5px;
-                font-size: 20px;
+                @include boton(5px, 20px) 
             }
         }
 

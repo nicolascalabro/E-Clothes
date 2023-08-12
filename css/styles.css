@@ -1,11 +1,10 @@
-/*Tags*/
-/*Imports*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*Tags*/
 main h2 {
   color: DodgerBlue;
   font-size: 30px;
@@ -84,7 +83,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 0px; /*Saco el padding que puso Bootstrap*/
+  padding-left: 0px;
 }
 .footerNavegador ul li {
   margin: 2px;
@@ -142,7 +141,7 @@ footer {
 .footerContactos p {
   color: white;
   height: 25px;
-  margin: 0px; /*Saco el margin que puso Bootstrap*/
+  margin: 0px;
 }
 
 /*-----Imagenes-----*/
@@ -251,7 +250,7 @@ footer {
 
 .tarjetaItems__descripcion {
   font-size: 20px;
-  margin: 0px; /*Saco el margin que me puso la hoja de style de Bootstrap*/
+  margin: 0px;
 }
 
 .tarjetaItems__boton {
@@ -268,12 +267,12 @@ footer {
 
 .tarjetaItems__precio {
   font-size: 20px;
-  margin: 0px; /*Saco el margin que me puso la hoja de style de Bootstrap*/
+  margin: 0px;
 }
 
 .tarjetaItems__cuotas {
   font-size: 20px;
-  margin: 0px; /*Saco el margin que me puso la hoja de style de Bootstrap*/
+  margin: 0px;
 }
 
 .tarjetaItems__corazon {
@@ -291,11 +290,6 @@ footer {
   border-radius: 5px;
 }
 
-/*.logoWhatsapp img{
-    position: fixed;
-    top: 90%;
-    right: 5%;
-}*/
 /*-----Formulario-----*/
 .formulario {
   border: 2px solid rgb(65, 129, 172);
@@ -360,12 +354,15 @@ footer {
   gap: 10px;
 }
 .formulario .botones button {
-  width: 100px;
   background-color: rgb(65, 129, 172);
   padding: 5px;
   color: whitesmoke;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 20px;
+}
+.formulario .botones button :hover {
+  color: rgb(11, 34, 49);
+  transition: 0.5s;
 }
 
 /*-----Info de contacto-----*/
@@ -458,7 +455,7 @@ footer {
   gap: 10px;
 }
 .productoX .informacion .informacionColor h4 {
-  margin: 0px; /*Saco margin que Bootstrap puso*/
+  margin: 0px;
 }
 .productoX .informacion .informacionBoton {
   display: flex;
@@ -471,6 +468,10 @@ footer {
   color: whitesmoke;
   border-radius: 5px;
   font-size: 20px;
+}
+.productoX .informacion .informacionBoton button :hover {
+  color: rgb(11, 34, 49);
+  transition: 0.5s;
 }
 .productoX .compartir {
   grid-area: comp;

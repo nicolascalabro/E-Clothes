@@ -1,0 +1,11 @@
+@mixin boton ($padding_value, $fontsize_value) {
+    background-color: $tag_color_template;
+        padding: $padding_value;
+        color: whitesmoke;
+        border-radius: 5px;
+        font-size: $fontsize_value;  
+        & :hover{
+            color: $tag_color_hover;
+            transition: 0.5s;
+        } 
+}
