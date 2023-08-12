@@ -27,8 +27,7 @@
         font-size: 25px;
     }
     a{
-        text-decoration: none;
-        color: whitesmoke;   
+        @extend %links;
     }
     button{
         @include boton(10px, 20px) 

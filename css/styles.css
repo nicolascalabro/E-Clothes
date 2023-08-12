@@ -5,6 +5,11 @@
 }
 
 /*Tags*/
+.tarjetaItems a, .tarjetaProductos a, .footerNavegador ul li a, .headerNavegador ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 main h2 {
   color: DodgerBlue;
   font-size: 30px;
@@ -38,10 +43,6 @@ main h2 {
   transition: 0.5s;
   border-radius: 5px;
   padding: 5px 5px;
-}
-.headerNavegador ul li a {
-  color: white;
-  text-decoration: none;
 }
 @media (max-width: 768px) {
   .headerNavegador ul {
@@ -92,11 +93,6 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-.footerNavegador ul li a {
-  color: white;
-  text-decoration: none;
-}
-
 /*Redes*/
 .footerRedes {
   display: flex;
@@ -200,10 +196,6 @@ footer {
 .tarjetaProductos h3 {
   font-size: 25px;
 }
-.tarjetaProductos a {
-  text-decoration: none;
-  color: whitesmoke;
-}
 .tarjetaProductos button {
   background-color: rgb(65, 129, 172);
   padding: 10px;
@@ -238,11 +230,6 @@ footer {
   gap: 5px;
   position: relative;
 }
-.tarjetaItems a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-
 .tarjetaItems__img {
   width: 100%;
   object-fit: cover;

@@ -20,8 +20,7 @@
     gap: 5px;
     position: relative;
     a{
-        text-decoration: none;
-        color: whitesmoke;
+        @extend %links;
     }
 }
 
