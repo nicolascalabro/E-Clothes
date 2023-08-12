@@ -27,7 +27,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-left: 0px;  /*Saco el padding que puso Bootstrap*/
+        padding-left: 0px;
         li{
             margin: 2px;
             padding: 1px;
@@ -85,6 +85,6 @@ footer{
     p{
         color: white;
         height: 25px;
-        margin: 0px;        /*Saco el margin que puso Bootstrap*/
+        margin: 0px;
     }
 }
