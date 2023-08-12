@@ -62,7 +62,7 @@
     }
     .botones{
         button{
-            @include boton(5px, 20px) 
+            @include boton(10px, 20px) 
         }
     }    
 }
