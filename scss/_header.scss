@@ -16,7 +16,6 @@
             margin: 2px;
             padding: 5px;
             & :hover{
-                /*background-color:  rgb(16, 78, 119);*/
                 background-color: $tag_color_hover;   
                 transition: 0.5s;
                 border-radius: 5px;
@@ -24,12 +23,40 @@
                 }
             a{
                 @extend %links;
+                @media(max-width:768px){
+                    color:white;
+                }
             }
         }
         @media(max-width:768px){
             flex-direction: column;
-            margin: 0px;
-            padding: 0px; 
+            align-items: center;
+            background-color: $tag_color_hover;           
+            padding: 100px 0px; 
+            position: fixed;
+            z-index: 1;           
+            top: 0%;
+            height: 100%;
+            width: 200px;
+            left: -250px;
+            &:hover{
+                left: 0px;
+                transition: 0.5s;
+            }
         }      
+    }
+    .fa-bars{
+        color: whitesmoke;
+        font-size: 30px;            
+        padding: 20px;
+        display: none;
+        @media(max-width:768px){           
+            display: block;
+            order: -1;
+        }
+        &:hover + ul{
+            left: 0px;
+            transition: 0.5s;
+        }
     }
 }
