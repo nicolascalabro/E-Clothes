@@ -34,14 +34,14 @@
             background-color: $tag_color_hover;           
             padding: 100px 0px; 
             position: fixed;
-            z-index: 1;           
+            z-index: 3;           
             top: 0%;
             height: 100%;
             width: 200px;
             left: -250px;
             &:hover{
                 left: 0px;
-                transition: 0.5s;
+                transition: 0.5s; 
             }
         }      
     }
@@ -56,7 +56,7 @@
         }
         &:hover + ul{
             left: 0px;
-            transition: 0.5s;
+            transition: 0.5s;           
         }
     }
 }
