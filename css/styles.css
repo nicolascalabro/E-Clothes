@@ -303,8 +303,27 @@ footer {
   position: absolute;
   top: 10px;
   left: 10px;
+  opacity: 20%;
+}
+.tarjetaItems__corazon:hover {
+  animation-name: movingHeart;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
 }
 
+@keyframes movingHeart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 100%;
+    transform: scale(1.2);
+    color: rgb(201, 17, 17);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*-----Logos-----*/
 .headerLogo {
   width: 75px;
