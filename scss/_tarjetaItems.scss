@@ -3,7 +3,7 @@
 .sectionTarjetaItems{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  
+    justify-content: center;   
 }
 
 .tarjetaItems{
@@ -21,7 +21,7 @@
     position: relative;
     a{
         @extend %links;
-    }
+    }   
 }
 
 .tarjetaItems__img{
