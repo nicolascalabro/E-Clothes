@@ -312,7 +312,7 @@ footer {
 .tarjetaItems__corazon:hover {
   animation-name: movingHeart;
   animation-duration: 1s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
 }
 
 @keyframes movingHeart {
