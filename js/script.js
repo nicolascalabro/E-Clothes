@@ -1,5 +1,5 @@
-const productos = ["Buzo", "Pantalón", "Campera"];
-const precios = [50000, 45000, 90000];
+const productos = ["Buzo", "Pantalón", "Campera", "Zapatillas", "Remera"];
+const precios = [50000, 45000, 90000, 120000, 30000];
 let carrito = [];
 let total = 0;
 
