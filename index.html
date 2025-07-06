@@ -14,7 +14,7 @@
     <!--Script Javascript de Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!--Script Javascript simulador carrito de compras-->
-    <script src="./js/script.js" defer></script>
+    <script src="./js/add_carrito.js" defer></script>
 </head>
 <body>
 
@@ -28,7 +28,8 @@
                 <li><a href="./pages/buzos.html">Buzos</a></li>
                 <li><a href="./pages/camperas.html">Camperas</a></li>             
                 <li><a href="./pages/contact.html">Contacto</a></li>
-                <li><a href="./pages/help.html">Ayuda</a></li>                
+                <li><a href="./pages/help.html">Ayuda</a></li>   
+                <li><a href="./pages/carrito.html">Ver Carrito</a></li>      
             </ul>        
         </nav>
     </header>
@@ -89,7 +90,10 @@
                 <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO MANGA PRINCESA INVERNESS</h3> 
                 <p class="tarjetaItems__precio">$7.080</p>
                 <p class="tarjetaItems__cuotas">$6.290 11% OFF CONT.</p>
-                <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver detalles</a></button>
+                <div class="tarjetaItems__acciones">
+                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
+                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
+                </div>
                 <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
             </div>
             <div class="tarjetaItems">
@@ -97,7 +101,10 @@
                 <h3 class="tarjetaItems__descripcion">CAMPERA PUFFER LEICESTER ZEBRA</h3> 
                 <p class="tarjetaItems__precio">$33.656</p>
                 <p class="tarjetaItems__cuotas">$28.028 17% OFF CONT.</p>
-                <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver detalles</a></button>
+                <div class="tarjetaItems__acciones">
+                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
+                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
+                </div>
                 <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
             </div>
             <div class="tarjetaItems">
@@ -105,7 +112,10 @@
                 <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO ANCHO MANGA GLOBO CHERRY</h3> 
                 <p class="tarjetaItems__precio">$5.290</p>
                 <p class="tarjetaItems__cuotas">$4.490 15% OFF CONT.</p>
-                <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver detalles</a></button>
+                <div class="tarjetaItems__acciones">
+                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
+                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
+                </div>
                 <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
             </div>
             <div class="tarjetaItems">
@@ -113,7 +123,10 @@
                 <h3 class="tarjetaItems__descripcion">PARKA GABARDINA CON PIEL ANTONIA</h3> 
                 <p class="tarjetaItems__precio">$44.912</p>
                 <p class="tarjetaItems__cuotas">$32.785 17% OFF CONT.</p>
-                <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver detalles</a></button>
+                <div class="tarjetaItems__acciones">
+                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
+                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
+                </div>
                 <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
             </div>
             <div class="tarjetaItems">
@@ -121,7 +134,10 @@
                 <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO OVERSIZE CON CAPUCHA PHILADELPHIA</h3> 
                 <p class="tarjetaItems__precio">$7.080</p>
                 <p class="tarjetaItems__cuotas">3 CUOTAS SIN INTERÉS</p>
-                <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver detalles</a></button>
+                <div class="tarjetaItems__acciones">
+                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
+                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
+                </div>
                 <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
             </div>
             <div class="tarjetaItems">
@@ -129,7 +145,10 @@
                 <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO ANCHO MANGA GLOBO GIRL POWER</h3> 
                 <p class="tarjetaItems__precio">$5.618</p>
                 <p class="tarjetaItems__cuotas">6 CUOTAS SIN INTERÉS</p>
-                <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver detalles</a></button>
+                <div class="tarjetaItems__acciones">
+                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
+                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
+                </div>
                 <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
             </div>
             <div class="tarjetaItems">
@@ -137,7 +156,10 @@
                 <h3 class="tarjetaItems__descripcion">CHAQUETA GABARDINA CON LENTEJUELAS ALL YOU NEED</h3> 
                 <p class="tarjetaItems__precio">$12.990</p>
                 <p class="tarjetaItems__cuotas">$12.080 7% CONT.</p>
-                <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver detalles</a></button>
+                <div class="tarjetaItems__acciones">
+                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
+                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
+                </div>
                 <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
             </div>
             <div class="tarjetaItems">
@@ -145,7 +167,10 @@
                 <h3 class="tarjetaItems__descripcion">SWEATER LANILLA BRUSH LAZO Y MANGA GLOBO YAELI</h3> 
                 <p class="tarjetaItems__precio">$8.769</p>
                 <p class="tarjetaItems__cuotas">$5.780 34% OFF CONT.</p>
-                <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver detalles</a></button>
+                <div class="tarjetaItems__acciones">
+                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
+                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
+                </div>
                 <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
             </div>
         </section>  
