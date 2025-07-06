@@ -9,9 +9,10 @@ E-Clothes es un e-commerce desarrollado con HTML, CSS, SaaS y Bootstrap. El mism
 - Productos: Muestra las categorías de productos disponibles en la tienda. 
 - Buzos/Camperas: Muestran los productos según su categoría, donde se puede ingresar a ver una vista detallada de cada uno. 
 - Contacto: Despliega los datos de contacto y un formulario para dejar un mensaje. 
-- Ayuda: Información y preguntas frecuentes. 
+- Ayuda: Información y preguntas frecuentes.
+- Carrito: Se puede ver un resumen del carrito de compras y borrar el mismo. 
 
-Actualmente me encuentro implementando el Backend en JavaScript, por lo que en esta última modificación he agregado en la pantalla Inicio un script de JavaScript que simula el carrito de compras, interactuando con el usuario a través de la consola del navegador y de prompts. 
+Actualmente me encuentro implementando el Backend en JavaScript. En esta última modificación he actualizado el simulador del carrito de compras, adhiriendo un botón (Agregar) a cada producto y una nueva página (Ver Carrito) para consultarlo.
 
 Clónatelo!
 ``
