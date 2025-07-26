@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "description": "BUZO FRISADO MANGA PRINCESA WATERLOO",
+        "price": 8274.00,
+        "paymentMethod": "$6.546 21% OFF CONT.",
+        "category": "Buzos",
+        "imageUrl": "../media/imgs/buzo_1.jpg"
+    },
+    {
+        "id": 2,
+        "description": "BUZO OVERSIZE RÚSTICO CON CAPUCHA Y ESTAMPA LOVE",
+        "price": 7390.00,
+        "paymentMethod": "$6.590 10% OFF CONT.",
+        "category": "Buzos",
+        "imageUrl": "../media/imgs/buzo_2.jpg"
+    },
+    {
+        "id": 3,
+        "description": "BUZO RÚSTICO OVERSIZE CON CAPUCHA PHILADELPHIA",
+        "price": 7080.00,
+        "paymentMethod": "3 CUOTAS SIN INTERÉS",
+        "category": "Buzos",
+        "imageUrl": "../media/imgs/buzo_3.jpg"
+    },
+    {
+        "id": 4,
+        "description": "SWEATER LANILLA BRUSH LAZO Y MANGA GLOBO YAELI",
+        "price": 8769.00,
+        "paymentMethod": "$5.780 34% OFF CONT.",
+        "category": "Buzos",
+        "imageUrl": "../media/imgs/buzo_4.jpg"
+    },
+    {
+        "id": 5,
+        "description": "BUZO RÚSTICO MANGA PRINCESA INVERNESS",
+        "price": 7080.00,
+        "paymentMethod": "$6.290 11% OFF CONT.",
+        "category": "Buzos",
+        "imageUrl": "../media/imgs/buzo_5.jpg"
+    },
+    {
+        "id": 6,
+        "description": "POLERA TRENZAS GRUESAS Y FINAS LINETTE",
+        "price": 8206.00,
+        "paymentMethod": "6 CUOTAS SIN INTERÉS",
+        "category": "Buzos",
+        "imageUrl": "../media/imgs/buzo_6.jpg"
+    },
+    {
+        "id": 7,
+        "description": "BUZO RÚSTICO ANCHO MANGA GLOBO CHERRY",
+        "price": 5290.00,
+        "paymentMethod": "$4.490 15% OFF CONT.",
+        "category": "Buzos",
+        "imageUrl": "../media/imgs/buzo_7.jpg"
+    },
+    {
+        "id": 8,
+        "description": "BUZO RÚSTICO OVERSIZE CAPUCHA LONDON",
+        "price": 7080.00,
+        "paymentMethod": "$6.379 10% OFF CONT.",
+        "category": "Buzos",
+        "imageUrl": "../media/imgs/buzo_8.jpg"
+    },
+    {
+        "id": 9,
+        "description": "BUZO RÚSTICO ANCHO MANGA GLOBO JERRY",
+        "price": 5990.00,
+        "paymentMethod": "$5.340 11% OFF CONT.",
+        "category": "Buzos",
+        "imageUrl": "../media/imgs/buzo_9.jpg"
+    },
+    {
+        "id": 10,
+        "description": "BUZO RÚSTICO ANCHO MANGA GLOBO GIRL POWER",
+        "price": 5618.00,
+        "paymentMethod": "6 CUOTAS SIN INTERÉS",
+        "category": "Buzos",
+        "imageUrl": "../media/imgs/buzo_10.jpg"
+    },
+    {
+        "id": 11,
+        "description": "CAMPERA PUFFER BULGARIA CON CIERRE",
+        "price": 37033.00,
+        "paymentMethod": "$31.480 15% OFF CONT.",
+        "category": "Camperas",
+        "imageUrl": "../media/imgs/campera_1.jpg"
+    },
+    {
+        "id": 12,
+        "description": "PARKA GABARDINA CON PIEL Y CAPUCHA LAIKA",
+        "price": 54990.00,
+        "paymentMethod": "6 CUOTAS SIN INTERÉS",
+        "category": "Camperas",
+        "imageUrl": "../media/imgs/campera_2.jpg"
+    },
+    {
+        "id": 13,
+        "description": "CAMPERA PUFFER CON BOLSILLOS Y BOTONES GREVIN",
+        "price": 47990.00,
+        "paymentMethod": "$40.790 25% OFF CONT.",
+        "category": "Camperas",
+        "imageUrl": "../media/imgs/campera_3.jpg"
+    },
+    {
+        "id": 14,
+        "description": "CAMPERA PUFFER LEICESTER ZEBRA",
+        "price": 33656.00,
+        "paymentMethod": "$28.028 17% OFF CONT.",
+        "category": "Camperas",
+        "imageUrl": "../media/imgs/campera_4.jpg"
+    },
+    {
+        "id": 15,
+        "description": "PARKA GABARDINA CON PIEL Y CAPUCHA MAUREN",
+        "price": 49990.00,
+        "paymentMethod": "$39.992 20% OFF CONT.",
+        "category": "Camperas",
+        "imageUrl": "../media/imgs/campera_5.jpg"
+    },
+    {
+        "id": 16,
+        "description": "CHAQUETA GABARDINA CON LENTEJUELAS ALL YOU NEED",
+        "price": 12990.00,
+        "paymentMethod": "$12.080 7% CONT.",
+        "category": "Camperas",
+        "imageUrl": "../media/imgs/campera_6.jpg"
+    },
+    {
+        "id": 17,
+        "description": "CAMPERON PUFFER CON CAPUCHA URANO",
+        "price": 52990.00,
+        "paymentMethod": "12 CUOTAS SIN INTERÉS",
+        "category": "Camperas",
+        "imageUrl": "../media/imgs/campera_7.jpg"
+    },
+    {
+        "id": 18,
+        "description": "PARKA GABARDINA CON PIEL ANTONIA",
+        "price": 44912.00,
+        "paymentMethod": "$32.785 17% OFF CONT.",
+        "category": "Camperas",
+        "imageUrl": "../media/imgs/campera_8.jpg"
+    },
+    {
+        "id": 19,
+        "description": "CHAQUETA CUERINA CON BOLSILLOS CANESU",
+        "price": 13395.00,
+        "paymentMethod": "$12.060 10% OFF CONT.",
+        "category": "Camperas",
+        "imageUrl": "../media/imgs/campera_9.jpg"
+    },
+    {
+        "id": 20,
+        "description": "CHAQUETA R&R GABARDINA CON VUELOS Y LENTEJUELAS",
+        "price": 15990.00,
+        "paymentMethod": "$14.240 11% OFF CONT.",
+        "category": "Camperas",
+        "imageUrl": "../media/imgs/campera_10.jpg"
+    }
+]

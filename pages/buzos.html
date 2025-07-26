@@ -11,8 +11,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Hoja de style de librerias-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!--Script Javascript librerias-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
     <!--Script Javascript simulador carrito de compras-->
-    <script src="../js/add_carrito.js" defer></script>
+    <script src="../js/cart.js" defer></script>
+    
 </head>
 <body>
 
@@ -27,134 +34,14 @@
                 <li><a href="./camperas.html">Camperas</a></li>
                 <li><a href="./contact.html">Contacto</a></li>
                 <li><a href="./help.html">Ayuda</a></li>
-                <li><a href="./carrito.html">Ver Carrito</a></li>
+                 <!--<li><a href="./carrito.html">Ver Carrito</a></li>-->
             </ul>
         </nav>
     </header>
 
     <main>
         <h1>Buzos</h1>
-        <section class="sectionTarjetaItems">
-            <!--Tarjeta Producto: Buzo 1-->
-            <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="../media/imgs/buzo_1.jpg" alt="BUZO FRISADO MANGA PRINCESA WATERLOO">
-                <h3 class="tarjetaItems__descripcion">BUZO FRISADO MANGA PRINCESA WATERLOO</h3> 
-                <p class="tarjetaItems__precio">$8.274</p>
-                <p class="tarjetaItems__cuotas">$6.546 21% OFF CONT.</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div> 
-            <!--Tarjeta Producto: Buzo 2-->
-            <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="../media/imgs/buzo_2.jpg" alt="BUZO OVERSIZE RÚSTICO CON CAPUCHA Y ESTAMPA LOVE">
-                <h3 class="tarjetaItems__descripcion">BUZO OVERSIZE RÚSTICO CON CAPUCHA Y ESTAMPA LOVE</h3> 
-                <p class="tarjetaItems__precio">$7.390</p>
-                <p class="tarjetaItems__cuotas">$6.590 10% OFF CONT.</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div> 
-            <!--Tarjeta Producto: Buzo 3-->
-            <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="../media/imgs/buzo_3.jpg" alt="BUZO RÚSTICO OVERSIZE CON CAPUCHA PHILADELPHIA">
-                <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO OVERSIZE CON CAPUCHA PHILADELPHIA</h3> 
-                <p class="tarjetaItems__precio">$7.080</p>
-                <p class="tarjetaItems__cuotas">3 CUOTAS SIN INTERÉS</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-            <!--Tarjeta Producto: Buzo 4-->
-            <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="../media/imgs/buzo_4.jpg" alt="SWEATER LANILLA BRUSH LAZO Y MANGA GLOBO YAELI">
-                <h3 class="tarjetaItems__descripcion">SWEATER LANILLA BRUSH LAZO Y MANGA GLOBO YAELI</h3> 
-                <p class="tarjetaItems__precio">$8.769</p>
-                <p class="tarjetaItems__cuotas">$5.780 34% OFF CONT.</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-            <!--Tarjeta Producto: Buzo 5-->
-            <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="../media/imgs/buzo_5.jpg" alt="BUZO RÚSTICO MANGA PRINCESA INVERNESS">
-                <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO MANGA PRINCESA INVERNESS</h3> 
-                <p class="tarjetaItems__precio">$7.080</p>
-                <p class="tarjetaItems__cuotas">$6.290 11% OFF CONT.</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-             <!--Tarjeta Producto: Buzo 6-->
-             <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="../media/imgs/buzo_6.jpg" alt="POLERA TRENZAS GRUESAS Y FINAS LINETTE">
-                <h3 class="tarjetaItems__descripcion">POLERA TRENZAS GRUESAS Y FINAS LINETTE</h3> 
-                <p class="tarjetaItems__precio">$8.206</p>
-                <p class="tarjetaItems__cuotas">6 CUOTAS SIN INTERÉS</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-             <!--Tarjeta Producto: Buzo 7-->
-             <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="../media/imgs/buzo_7.jpg" alt="BUZO RÚSTICO ANCHO MANGA GLOBO CHERRY">
-                <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO ANCHO MANGA GLOBO CHERRY</h3> 
-                <p class="tarjetaItems__precio">$5.290</p>
-                <p class="tarjetaItems__cuotas">$4.490 15% OFF CONT.</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-             <!--Tarjeta Producto: Buzo 8-->
-             <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="../media/imgs/buzo_8.jpg" alt="BUZO RÚSTICO OVERSIZE CAPUCHA LONDON">
-                <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO OVERSIZE CAPUCHA LONDON</h3> 
-                <p class="tarjetaItems__precio">$7.080</p>
-                <p class="tarjetaItems__cuotas">$6.379 10% OFF CONT.</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-             <!--Tarjeta Producto: Buzo 9-->
-             <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="../media/imgs/buzo_9.jpg" alt="BUZO RÚSTICO ANCHO MANGA GLOBO JERRY">
-                <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO ANCHO MANGA GLOBO JERRY</h3> 
-                <p class="tarjetaItems__precio">$5.990</p>
-                <p class="tarjetaItems__cuotas">$5.340 11% OFF CONT.</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-             <!--Tarjeta Producto: Buzo 10-->
-             <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="../media/imgs/buzo_10.jpg" alt="BUZO RÚSTICO ANCHO MANGA GLOBO GIRL POWER">
-                <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO ANCHO MANGA GLOBO GIRL POWER</h3> 
-                <p class="tarjetaItems__precio">$5.618</p>
-                <p class="tarjetaItems__cuotas">6 CUOTAS SIN INTERÉS</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
+        <section class="sectionTarjetaItems" id="buzosList">
         </section>         
     </main>
 
