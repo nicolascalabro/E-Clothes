@@ -1,7 +1,10 @@
-buzosList = document.getElementById("buzosList");
-camperasList = document.getElementById("camperasList");
-//localStorage.removeItem("cart");
+const buzosList = document.getElementById("buzosList");
+const camperasList = document.getElementById("camperasList");
+const btnViewCart = document.getElementById("btnViewCart");
+localStorage.removeItem("cart");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+btnViewCart.addEventListener("click",viewCart);
 
 async function getProducts() {
     try {
@@ -70,10 +73,38 @@ function addToCart(productToAdd) {
         text: `${productToAdd.description} agregado al carrito`,
         duration: 3000,
         gravity: "bottom",
-        position: "right",
+        position: "left",
         backgroundColor: "linear-gradient(to right,rgb(0, 73, 176),rgb(61, 171, 201))",
         stopFocus: true,
     }).showToast();
 }
+
+function viewCart(){
+    if (cart.length === 0) {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Alerta',
+            text: "El carrito esta vacio",
+        });
+        return;    
+    }
+    const ul = document.createElement("ul");
+    let total = 0;
+    cart.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = `${item.description} - $${item.price}`;
+        ul.appendChild(li);
+        //precio = parseFloat(item.precio);
+        total += precio;
+    });
+
+    const p = document.createElement("p");
+    p.textContent = `Total: $${total}`;
+
+
+
+}
+
+
 
 getProducts();
