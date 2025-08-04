@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descubre un mundo de moda femenina en nuestra tienda online. Prendas elegantes y cómodas que reflejan tu personalidad. Renueva tu armario hoy mismo">
     <title>E-Clothes</title>
-    <link rel="shortcut icon" href="./media/icons/online-shop.png" type="image/x-icon">    
+    <!--Logotipo E-Clothes-->
+    <link rel="shortcut icon" href="./media/icons/online-shop.png" type="image/x-icon">  
     <!--Hoja de style de Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!--Hoja de style Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--Script Javascript de Bootstrap-->
+    <!--Hoja de style propia-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--Hoja de style de librerias-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!--Script de Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--Script Javascript librerias-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <!--Script Javascript simulador carrito de compras-->
+    <script src="./js/cart.js" defer></script>    
 </head>
 <body>
 
@@ -22,7 +33,6 @@
             <i class="fa-solid fa-bars"></i>
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/products.html">Productos</a></li>
                 <li><a href="./pages/buzos.html">Buzos</a></li>
                 <li><a href="./pages/camperas.html">Camperas</a></li>             
                 <li><a href="./pages/contact.html">Contacto</a></li>
@@ -78,103 +88,7 @@
                 <h3>Camperas</h3>                
                 <button><a href="./pages/camperas.html">Ver más</a></button>    
             </div>   
-        </section> 
-
-        <!--Se muestran los productos mas comprados-->
-        <!--
-        <h1>Productos destacados</h1>
-        <section class="sectionTarjetaItems">            
-            <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="./media/imgs/buzo_5.jpg" alt="BUZO RÚSTICO MANGA PRINCESA INVERNESS">
-                <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO MANGA PRINCESA INVERNESS</h3> 
-                <p class="tarjetaItems__precio">$7.080</p>
-                <p class="tarjetaItems__cuotas">$6.290 11% OFF CONT.</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-            <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="./media/imgs/campera_4.jpg" alt="CAMPERA PUFFER LEICESTER ZEBRA">
-                <h3 class="tarjetaItems__descripcion">CAMPERA PUFFER LEICESTER ZEBRA</h3> 
-                <p class="tarjetaItems__precio">$33.656</p>
-                <p class="tarjetaItems__cuotas">$28.028 17% OFF CONT.</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-            <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="./media/imgs/buzo_7.jpg" alt="BUZO RÚSTICO ANCHO MANGA GLOBO CHERRY">
-                <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO ANCHO MANGA GLOBO CHERRY</h3> 
-                <p class="tarjetaItems__precio">$5.290</p>
-                <p class="tarjetaItems__cuotas">$4.490 15% OFF CONT.</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-            <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="./media/imgs/campera_8.jpg" alt="PARKA GABARDINA CON PIEL ANTONIA">
-                <h3 class="tarjetaItems__descripcion">PARKA GABARDINA CON PIEL ANTONIA</h3> 
-                <p class="tarjetaItems__precio">$44.912</p>
-                <p class="tarjetaItems__cuotas">$32.785 17% OFF CONT.</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-            <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="./media/imgs/buzo_3.jpg" alt="BUZO RÚSTICO OVERSIZE CON CAPUCHA PHILADELPHIA">
-                <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO OVERSIZE CON CAPUCHA PHILADELPHIA</h3> 
-                <p class="tarjetaItems__precio">$7.080</p>
-                <p class="tarjetaItems__cuotas">3 CUOTAS SIN INTERÉS</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-            <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="./media/imgs/buzo_10.jpg" alt="BUZO RÚSTICO ANCHO MANGA GLOBO GIRL POWER">
-                <h3 class="tarjetaItems__descripcion">BUZO RÚSTICO ANCHO MANGA GLOBO GIRL POWER</h3> 
-                <p class="tarjetaItems__precio">$5.618</p>
-                <p class="tarjetaItems__cuotas">6 CUOTAS SIN INTERÉS</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-            <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="./media/imgs/campera_6.jpg" alt="CHAQUETA GABARDINA CON LENTEJUELAS ALL YOU NEED">
-                <h3 class="tarjetaItems__descripcion">CHAQUETA GABARDINA CON LENTEJUELAS ALL YOU NEED</h3> 
-                <p class="tarjetaItems__precio">$12.990</p>
-                <p class="tarjetaItems__cuotas">$12.080 7% CONT.</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-            <div class="tarjetaItems">
-                <img class="tarjetaItems__img" src="./media/imgs/buzo_4.jpg" alt="SWEATER LANILLA BRUSH LAZO Y MANGA GLOBO YAELI">
-                <h3 class="tarjetaItems__descripcion">SWEATER LANILLA BRUSH LAZO Y MANGA GLOBO YAELI</h3> 
-                <p class="tarjetaItems__precio">$8.769</p>
-                <p class="tarjetaItems__cuotas">$5.780 34% OFF CONT.</p>
-                <div class="tarjetaItems__acciones">
-                    <button class="tarjetaItems__boton"><a href="./pages/producto_x.html">Ver</a></button>               
-                    <button class="tarjetaItems__boton tarjetaItems__boton__agregar">Agregar</button>
-                </div>
-                <i class="fa-solid fa-heart tarjetaItems__corazon"></i>
-            </div>
-        </section> 
-        -->
-        
+        </section>         
     </main>
 
     <footer>
@@ -183,7 +97,6 @@
             <nav>
                 <ul>
                     <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/products.html">Productos</a></li>
                     <li><a href="./pages/contact.html">Contacto</a></li>
                     <li><a href="./pages/help.html">Ayuda</a></li>
                 </ul>        
@@ -209,9 +122,3 @@
     </footer>
 </body>
 </html>
-
-
- <!--
-<div id="carrito-contenedor">
-        </div>
-        -->
